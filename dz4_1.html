@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+		let a=[];
+		
+		 for (i=0; i<Infinity; i++) {
+		
+		a[i]=prompt(`Введите число`);
+		if (a[i] === "" || a[i] === null || !isFinite(a[i])) break;
+
+        a.push(+a[i]);
+		
+		}
+			a.pop();
+			
+				let sum = 0;
+				for (let i = 0; i < a.length; i++){
+				sum = +sum + +a[i];
+				}
+
+
+alert(`Сумма элементов массива = ${sum}`);
+
+
+
+    </script>
+
+
+</body>
+</html>
